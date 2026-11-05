@@ -152,7 +152,35 @@ color:var(--accent);
 transform:translateY(-3px);
 }
 
-/* SECTIONS */
+/***** TICKER TAPE *****/
+
+.ticker-wrap{
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+    color:white;
+    overflow:hidden;
+    padding:15px 0;
+    white-space:nowrap;
+}
+
+.ticker{
+    display:inline-block;
+    animation:scrollTicker 30s linear infinite;
+    font-weight:600;
+}
+
+.ticker span{
+    margin-right:60px;
+}
+
+@keyframes scrollTicker{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+  /* SECTIONS */
 
 section{
 padding:100px 20px;
